@@ -1,0 +1,4 @@
+bentoml==1.2.18
+scikit-learn
+numpy
+pydantic==2.5.3

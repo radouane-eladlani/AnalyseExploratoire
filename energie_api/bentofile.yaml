@@ -1,0 +1,19 @@
+service: "service:svc"
+description: "API de prédiction de consommation énergétique (Seattle 2016)"
+
+labels:
+  owner: "radouane"
+  project: "energie_seattle"
+
+include:
+  - "service.py"
+  - "requirements.txt"
+
+python:
+  lock_packages: true  
+
+models:
+  - modele_energie_seattle:latest
+
+docker:
+  distro: debian
